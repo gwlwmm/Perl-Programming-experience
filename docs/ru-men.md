@@ -1,3 +1,5 @@
+# 学习
+
 **基础学习**：[http://www.runoob.com/perl/perl-tutorial.html](http://www.runoob.com/perl/perl-tutorial.html)
 
 **详细文档**：[https://perldoc.perl.org/](https://perldoc.perl.org/)
@@ -6,7 +8,7 @@
 
 ---
 
-**关键点**：
+# **关键点**
 
 * 了解运行平台：[http://www.perl.org/get.html](http://www.perl.org/get.html)
 
@@ -18,13 +20,17 @@ $@、$\_、_@_\_、=&gt;、. 、&、\、die、if、elsif、unless、last、next�
 
 ---
 
-**练习**：
+# **练习**
 
-**1.**任意构造一个hash结构，将其每个key的值，放到一个数组，并按照字符串顺序排序，输出。
+## 习题1
+
+任意构造一个hash结构，将其每个key的值，放到一个数组，并按照字符串顺序排序，输出。
 
 编写的脚本支持一个参数：指定排序是倒序还是顺序。
 
-**2.**任意构造一个hash，至少具备以下几个key：
+## 习题2
+
+任意构造一个hash，至少具备以下几个key：
 
 key1 =&gt; "123d456e",
 
