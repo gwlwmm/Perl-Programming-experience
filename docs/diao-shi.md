@@ -1,6 +1,6 @@
 perl调试详细文档：[https://perldoc.perl.org/perldebug.html](https://perldoc.perl.org/perldebug.html)
 
-## 常规调试
+# 常规调试
 
 * 用法：perl -d 脚本文件
 
