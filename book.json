@@ -1,33 +1,33 @@
 {
     "plugins": [
         "expandable-chapters-small",
+		"anchor-navigation-ex",
         "-sharing", "sharing-plus",
-        "anchors",
         "splitter",
         "tbfed-pagefooter",
-        "anchor-navigation-ex",
         "-lunr", "-search", "search-plus",
         "prism", "-highlight",
         "github",
         "donate",
-        "get-pdf-link"
+        "get-pdf-link",
+		"theme-comscore"
     ],
     "pluginsConfig": {
         "expandable-chapters-small": {},
-        "anchors": {},
         "tbfed-pagefooter": {
             "copyright":"Copyright (C) Gong Weilin 2017",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "anchor-navigation-ex": {
+            "associatedWithSummary": false,
             "mode": "float",
-            "multipleH1": false,
-            "showLevel": false
+            "multipleH1": true,
+            "showLevel": true
         },
         "prism": {
             "css": [
-                "prismjs/themes/prism-solarizedlight.css"
+                "prismjs/themes/prism-tomorrow.css"
             ]
         },
         "github": {
