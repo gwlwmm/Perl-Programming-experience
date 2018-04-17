@@ -5,7 +5,7 @@ apache是后端接入层服务器，通常perl代码由perl解释器执行，解
 
 mod\_perl就能很好的解决apache执行perl代码的问题，mod\_perl以apache模块方式（动态库）封装了perl解释器。允许在apache进程中调用perl解释器。 并且在apache启动时，就调用了一系列初始化行为（包括解析perl代码）。
 
-配置**mod\_perl**：
+# 配置**mod\_perl**
 
 apache配置中添加
 
