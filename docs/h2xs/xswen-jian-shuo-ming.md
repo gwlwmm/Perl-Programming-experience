@@ -74,9 +74,15 @@ newRV\(\(SV \*\)hv\)是返回hash引用，不能直接返回HV。
 
 ## **接口的参数输入SV**
 
-* 获取字符串：char \* str = SvPV\(sv, len\)
+* ### 获取字符串
 
-* 获取结构体：struct xxx \*st = \(struct xxx \*\)SvPVbyte\(sv, len\);
+`char * str = SvPV(sv, len)`
+
+* ### 获取结构体
+
+```
+struct xxx *st = (struct xxx *)SvPVbyte(sv, len);
+```
 
 ```
 inline static stcs_h *sv_to_stcs_h(SV *h_sv)
