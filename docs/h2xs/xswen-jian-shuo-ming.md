@@ -1,4 +1,4 @@
-## 原理简介
+# 原理简介
 
 .xs文件分为两部分：
 
@@ -11,11 +11,13 @@
 
 本章节并不覆盖h2xs有关的所有内容，只介绍一些常用示例
 
-## xs语句
+# xs语句
 
 xs语句指定封装的接口属性，放在“MODULE = Plibtest        PACKAGE = Plibtest” 之后
 
-* 返回一个值：接口支持一些常规类型，如char \*，即perl语句中传入的标量。 详细参考前面章节提到的文档说明。
+* ## 返回一个值
+
+接口支持一些常规类型，如char \*，即perl语句中传入的标量。 详细参考前面章节提到的文档说明。
 
 ```
 I32
@@ -36,7 +38,7 @@ OUTPUT:
 
 说明：本例中XSRETURN\_UNDEF表示返回undef值
 
-* 返回数组
+* ## 返回数组
 
 ```
 void
@@ -157,7 +159,7 @@ RETVAL = newRV((SV *)sv_2mortal(sv))
 
 ## 扩展
 
-perl支持直接在perl语言中操作结构体，即pack/unpack，详见：https://perldoc.perl.org/functions/pack.html
+perl支持直接在perl语言中操作结构体，即pack/unpack，详见：[https://perldoc.perl.org/functions/pack.html](https://perldoc.perl.org/functions/pack.html)
 
 有时候，利用这个特性，能和h2xs更好配合使用
 
