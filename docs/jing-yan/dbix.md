@@ -1,8 +1,10 @@
+# DBIx
+
 DBIx是perl操作数据库的一个开源库，支持多种数据库，例如sqlite。DBIx由多个类组成，使用过程：
 
 假设当前工作目录是rootdir
 
-* 建立数据表对应的class
+* ## 建立数据表对应的class
 
 建立rootdir/SchemaExample/Result/User.pm
 
@@ -20,7 +22,7 @@ __PACKAGE__->set_primary_key('id');
 1
 ```
 
-* 用DBIx::Class::Schema连接数据库
+* ## 用DBIx::Class::Schema连接数据库
 
 ```
 package SchemaExample;
@@ -44,7 +46,7 @@ my $schema = SchemaExample->connect("dbi:SQLite:/home/db/test.db",
     });
 ```
 
-* 执行数据库语句（例如优化数据库配置）
+* ## 执行数据库语句（例如优化数据库配置）
 
 ```
 $schema->storage->dbh_do(
@@ -55,19 +57,19 @@ $schema->storage->dbh_do(
 );
 ```
 
-* 构造查询器
+* ## 构造查询器
 
 ```
 my $rs = $schema->resultset('user');
 ```
 
-* 构造查询条件
+* ## 构造查询条件
 
 ```
 my $new_rs = $rs->search_rs(条件, 选项);
 ```
 
-* 示例
+* ## 示例
 
 ```
 my $hash = {
@@ -115,6 +117,8 @@ foreach my $cd (@cds) {
 ```
 
 注：search\_rs只是封装了查询结构，并不会执行查询，因此一个new\_rs可以被保存，需要查询时再执行$new\_rs-&gt;all等操作。
+
+# 友情链接
 
 **如要深入了解DBIx，请仔细阅读以下内容**：
 
