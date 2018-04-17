@@ -10,7 +10,7 @@
         "prism", "-highlight",
         "github",
         "donate",
-		"get-pdf-link"
+        "get-pdf-link"
     ],
     "pluginsConfig": {
         "expandable-chapters-small": {},
@@ -63,10 +63,10 @@
             "button": "欢迎交流",
             "wechatText": "微信"
         },
-		"get-pdf-link": {
-			"base": "/Perl-Programming-experience.pdf"
-		},
-		"theme-default": {
+        "get-pdf-link": {
+            "base": "/Perl-Programming-experience.pdf"
+        },
+        "theme-default": {
              "showLevel": true
         }
     }
