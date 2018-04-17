@@ -29,7 +29,7 @@ PPCODE:
 INCLUDE: const-xs.inc
 ```
 
-* **step3，编译**
+* ## **step3，编译**
 
 ```
 cd Plibtest
@@ -38,7 +38,7 @@ make
 make install
 ```
 
-* **step4，调用接口**
+* ## **step4，调用接口**
 
 ```
 perl -e 'use Plibtest; Plibtest::echo("it works!");'
