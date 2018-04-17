@@ -131,9 +131,9 @@ HV *hash = (HV *)sv_2mortal((SV *)newHV());
 RETVAL = hash;
 ```
 
-## 其它操作
+# 其它操作
 
-* hash中嵌入hash：
+* ## hash中嵌入hash
 
 ```
 ...hash 是HV *变量
@@ -152,7 +152,7 @@ if (!hv_store(hash, key, strlen(key), rv, 0)) {
 }
 ```
 
-* 减少内存占用：
+* ## 减少内存占用
 
 ```
 ...sv是SV*变量
@@ -161,7 +161,7 @@ RETVAL = newRV((SV *)sv_2mortal(sv))
 
 注：如果直接返回hv或者sv，在超过作用域后，内存不会立即释放，这会导致内存占用。使用sv\_2mortal是延迟释放sv的内存占用，在超过作用域时，会自动释放。
 
-## 扩展
+# 扩展
 
 perl支持直接在perl语言中操作结构体，即pack/unpack，详见：[https://perldoc.perl.org/functions/pack.html](https://perldoc.perl.org/functions/pack.html)
 
