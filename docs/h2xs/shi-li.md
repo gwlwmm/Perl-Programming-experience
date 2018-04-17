@@ -2,7 +2,7 @@
 
 * ## **step1，执行：h2xs -n Plibtest**
 
-![](/assets/perl-h2xs-step1.png)
+![](/docs/assets/perl-h2xs-step1.png)
 
 * ## **step2，修改Plibtest.xs文件实现接口**
 
@@ -44,5 +44,5 @@ make install
 perl -e 'use Plibtest; Plibtest::echo("it works!");'
 ```
 
-结果：![](/assets/perl-h2xs-step4.png)
+结果：![](/docs/assets/perl-h2xs-step4.png)
 
