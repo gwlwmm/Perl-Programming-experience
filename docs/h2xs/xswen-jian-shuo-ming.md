@@ -105,16 +105,16 @@ inline static stcs_h *sv_to_stcs_h(SV *h_sv)
 ```
 
 * ### 使用建议
+* 尽量使用SvPVbyte， 这个只针对内存字节数而言的，而SvPV可能将字符串中的特殊字符进行转义。
 
-1. 尽量使用SvPVbyte， 这个只针对内存字节数而言的，而SvPV可能将字符串中的特殊字符进行转义。
-2. 判断需要加上SvPOK\(h\_sv\) \|\| SvPOKp\(h\_sv\)，以确认是sv标量，另，不能只判断SvPOK，perl中sv标量具有public和private属性。在运行环境中，标量可能呈现private属性，此时调用接口，SvPOK就判断为false，而SvPOKp为true。
+* 判断需要加上SvPOK\(h\_sv\) \|\| SvPOKp\(h\_sv\)，以确认是sv标量，另，不能只判断SvPOK，perl中sv标量具有public和private属性。在运行环境中，标量可能呈现private属性，此时调用接口，SvPOK就判断为false，而SvPOKp为true。
 
 # **返回值**
 
 * ## 返回undef
+* 在xs语句中XSRETURN\_UNDEF
 
-1. 在xs语句中XSRETURN\_UNDEF
-2. SV \*svundef = newSV\(0\); RETVAL=sv\_undef
+* SV \*svundef = newSV\(0\); RETVAL=sv\_undef
 
 * ## 返回SV标量
 
@@ -124,7 +124,7 @@ SV *sv = newSVpv(str, 0);
 RETVAL = sv;
 ```
 
-* 返回HV：
+* ## 返回HV
 
 ```
 HV *hash = (HV *)sv_2mortal((SV *)newHV());
