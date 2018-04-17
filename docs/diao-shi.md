@@ -2,7 +2,7 @@ perl调试详细文档：[https://perldoc.perl.org/perldebug.html](https://perld
 
 # 常规调试
 
-* 用法：perl -d 脚本文件
+* ## perl -d 脚本文件
 
 常用调试命令：
 
@@ -24,7 +24,7 @@ p 变量名或表达式 ------------- 输出结果
 
 x 变量名 --------------------------- 输出变量详细信息（通常使用这个命令打印变量）
 
-* 在代码中打印信息
+* ## 在代码中打印信息
 
 use Data::Dumper;
 
@@ -40,7 +40,7 @@ print Carp::longmess\(\);
 
 print caller\(0\);
 
-* 使用die抛出异常
+* ## 使用die抛出异常
 
 perl -MDevel::SimpleTrace 脚本文件
 
@@ -50,7 +50,7 @@ perl -MDevel::SimpleTrace 脚本文件
 
 # 高级调试
 
-* 动态调试----gdb
+* ## 动态调试----gdb
 
 出问题时，当perl进程正在运行，重启可能破坏现场，那么就可以借助gdb对perl进行调试：
 
@@ -60,7 +60,7 @@ gdb -p 进程pid
 
 上述语句会打印perl当前调用堆栈
 
-* 动态调试-----远程
+* ## 动态调试-----远程
 
 当需要对一个fork的子进程某个逻辑做调试时，可以使用远程调试
 
