@@ -164,7 +164,7 @@ main $*
 
 离线安装时，单个下载的源码库，会依赖其它库，在make test时会报错：
 
-![](/assets/perl-makefile.pl.png)
+![](/docs/assets/perl-makefile.pl.png)
 
 这说明缺少Canary::Stability，需要到cpan继续搜索Canary::Stability，然后按照离线方式安装后，再安装当前模块，如果还有错误，则继续安装。
 
