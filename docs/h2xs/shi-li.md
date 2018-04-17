@@ -1,14 +1,10 @@
 # H2XS示例
 
-* ## **step1**
-
-**执行：h2xs -n Plibtest**
+* ## **step1，执行：h2xs -n Plibtest**
 
 ![](/assets/perl-h2xs-step1.png)
 
-* ## **step2**
-
-**修改Plibtest.xs文件实现接口**
+* ## **step2，修改Plibtest.xs文件实现接口**
 
 ```
 #include "EXTERN.h"
