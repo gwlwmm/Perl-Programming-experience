@@ -1,20 +1,30 @@
 # 学习
 
-**基础学习**：[http://www.runoob.com/perl/perl-tutorial.html](http://www.runoob.com/perl/perl-tutorial.html)
+## **基础**
 
-**详细文档**：[https://perldoc.perl.org/](https://perldoc.perl.org/)
+[http://www.runoob.com/perl/perl-tutorial.html](http://www.runoob.com/perl/perl-tutorial.html)
 
-**学习心得**： 在面对海量资料时，首先要做的是“心平气和”。 静下心寻找文档的starting page， 一般都会系统性的引导阅读。
+## **详细文档**
+
+[https://perldoc.perl.org/](https://perldoc.perl.org/)
+
+## **学习心得**
+
+在面对海量资料时，首先要做的是“心平气和”。 静下心寻找文档的starting page， 一般都会系统性的引导阅读。
 
 ---
 
 # **关键点**
 
-* 了解运行平台：[http://www.perl.org/get.html](http://www.perl.org/get.html)
+* ## 运行平台
+
+[http://www.perl.org/get.html](http://www.perl.org/get.html)
 
 支持Windows、Unix/Linux、Mac OSX
 
-* 了解perl基础语法，至少包括这些关键词或运算符的用法：use、require、sub、my、local、our、state、$、%、@、qw、
+* ## 了解perl基础语法
+
+至少包括这些关键词或运算符的用法：use、require、sub、my、local、our、state、$、%、@、qw、
 
 $@、$\_、_@_\_、=&gt;、. 、&、\、die、if、elsif、unless、last、next、for、foreach、each、while、ref、scalar、eval、undef、delete、return、exists、defined、map、eq、ne、ge、le、lt、gt、==、!=、&gt;=、&lt;=、&lt;、&gt;、shift、push、pop、keys、=~、!~、m//、s//、//=、\|\|=、+、-、\*、/、++、--、\*\*，\_\_PACKAGE\_\_、bless、package、use base、constant
 
