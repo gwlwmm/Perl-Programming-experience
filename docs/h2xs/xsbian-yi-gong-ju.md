@@ -1,4 +1,4 @@
-h2xs\_module\_install：
+# h2xs\_module\_install
 
 ```
 #!/bin/bash
@@ -76,7 +76,6 @@ function main()
 }
 
 main $*
-
 ```
 
 
