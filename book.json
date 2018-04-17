@@ -1,0 +1,24 @@
+{
+    "plugins": [
+        "expandable-chapters-small",
+        "-sharing",
+        "anchors",
+        "splitter",
+        "tbfed-pagefooter",
+        "anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+        "expandable-chapters-small": {},
+        "anchors": {},
+        "tbfed-pagefooter": {
+          "copyright":"Copyright (C) Gong Weilin 2017",
+          "modify_label": "该文件修订时间：",
+          "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "anchor-navigation-ex": {
+            "mode": "float",
+            "multipleH1": false,
+            "showLevel": false
+        }
+    }
+}
