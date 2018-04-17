@@ -1,24 +1,66 @@
 {
     "plugins": [
         "expandable-chapters-small",
-        "-sharing",
+        "-sharing", "sharing-plus",
         "anchors",
         "splitter",
         "tbfed-pagefooter",
-        "anchor-navigation-ex"
+        "anchor-navigation-ex",
+		"-lunr", "-search", "search-plus",
+		"prism", "-highlight",
+		"github",
+		"donate"
     ],
     "pluginsConfig": {
         "expandable-chapters-small": {},
         "anchors": {},
         "tbfed-pagefooter": {
-          "copyright":"Copyright (C) Gong Weilin 2017",
-          "modify_label": "该文件修订时间：",
-          "modify_format": "YYYY-MM-DD HH:mm:ss"
+			"copyright":"Copyright (C) Gong Weilin 2017",
+			"modify_label": "该文件修订时间：",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "anchor-navigation-ex": {
             "mode": "float",
             "multipleH1": false,
             "showLevel": false
-        }
+        },
+		"prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+		"github": {
+			"url": "https://github.com/gwlwmm/"
+		},
+		"sharing": {
+			"douban": false,
+			"facebook": false,
+			"google": true,
+			"hatenaBookmark": false,
+			"instapaper": false,
+			"line": false,
+			"linkedin": false,
+			"messenger": false,
+			"pocket": false,
+			"qq": true,
+			"qzone": true,
+			"stumbleupon": false,
+			"twitter": false,
+			"viber": false,
+			"vk": false,
+			"weibo": true,
+			"whatsapp": false,
+			"weichat": true,
+			"all": [
+			   "facebook", "google",
+			   "weibo", "instapaper", "linkedin"
+			]
+		},
+		"donate": {
+			"wechat": "/docs/assets/weixin.jpg",
+			"title": "",
+			"button": "欢迎交流",
+			"wechatText": "微信"
+		}
     }
 }
