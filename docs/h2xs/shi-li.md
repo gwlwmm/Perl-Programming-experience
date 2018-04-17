@@ -1,4 +1,8 @@
-* **step1，执行：h2xs -n Plibtest**
+# H2XS示例
+
+* ## **step1**
+
+**执行：h2xs -n Plibtest**
 
 ![](/assets/perl-h2xs-step1.png)
 
