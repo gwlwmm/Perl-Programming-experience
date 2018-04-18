@@ -1,7 +1,7 @@
 {
     "plugins": [
         "expandable-chapters-small",
-		"anchor-navigation-ex",
+		"anchor-navigation-ex@0.1.8",
         "-sharing", "sharing-plus",
         "splitter",
         "tbfed-pagefooter",
